@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190919130426) do
+ActiveRecord::Schema.define(version: 20190919131957) do
 
   create_table "hoges", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 20190919130426) do
     t.boolean "is_hoge", default: false, null: false
     t.string "foo"
     t.integer "bar"
+    t.datetime "baz"
   end
 
 end
