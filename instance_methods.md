@@ -1,7 +1,21 @@
 # インスタンスメソッド
 ```ruby
 :updated_at
+:bar_change
+:bar_will_change!
+:bar_was
+:bar_previously_changed?
+:bar_previous_change
+:restore_bar!
+:saved_change_to_bar?
+:saved_change_to_bar
+:bar_before_last_save
+:will_save_change_to_bar?
+:bar_change_to_be_saved
+:bar_in_database
 :created_at
+:foo
+:bar
 :id_came_from_user?
 :id_changed?
 :id_change
@@ -48,8 +62,6 @@
 :will_save_change_to_updated_at?
 :updated_at_change_to_be_saved
 :updated_at_in_database
-# is_hoge(boolean)のColumn追加により18のmethodsが追加
-# ========== start
 :is_hoge
 :is_hoge=
 :is_hoge_before_type_cast
@@ -68,10 +80,6 @@
 :will_save_change_to_is_hoge?
 :is_hoge_change_to_be_saved
 :is_hoge_in_database
-# ========== end
-# foo(string)のColumn追加により18のmethodsが追加
-# ========== start
-:foo
 :foo=
 :foo_before_type_cast
 :foo_came_from_user?
@@ -89,7 +97,11 @@
 :will_save_change_to_foo?
 :foo_change_to_be_saved
 :foo_in_database
-# ========== end
+:bar=
+:bar_before_type_cast
+:bar_came_from_user?
+:bar?
+:bar_changed?
 :pluralize_table_names
 :table_name_suffix
 :_validate_callbacks
