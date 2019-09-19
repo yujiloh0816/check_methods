@@ -32,6 +32,8 @@
 :updated_at_change_to_be_saved
 :updated_at_in_database
 :created_at
+# is_hoge(boolean)のColumn追加により18のmethodsが追加
+# ========== start
 :is_hoge
 :is_hoge=
 :is_hoge_before_type_cast
@@ -50,6 +52,7 @@
 :will_save_change_to_is_hoge?
 :is_hoge_change_to_be_saved
 :is_hoge_in_database
+# ========== end
 :id_came_from_user?
 :id_changed?
 :id_change
