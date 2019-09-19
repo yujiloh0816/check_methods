@@ -1,5 +1,23 @@
 # インスタンスメソッド
 ```ruby
+:updated_at
+:created_at
+:id_came_from_user?
+:id_changed?
+:id_change
+:id_will_change!
+:id_previously_changed?
+:id_previous_change
+:restore_id!
+:saved_change_to_id?
+:saved_change_to_id
+:id_before_last_save
+:will_save_change_to_id?
+:id_change_to_be_saved
+:created_at=
+:created_at_before_type_cast
+:created_at_came_from_user?
+:created_at?
 :created_at_changed?
 :created_at_change
 :created_at_will_change!
@@ -21,7 +39,6 @@
 :updated_at_change
 :updated_at_will_change!
 :updated_at_was
-:updated_at
 :updated_at_previously_changed?
 :updated_at_previous_change
 :restore_updated_at!
@@ -31,7 +48,6 @@
 :will_save_change_to_updated_at?
 :updated_at_change_to_be_saved
 :updated_at_in_database
-:created_at
 # is_hoge(boolean)のColumn追加により18のmethodsが追加
 # ========== start
 :is_hoge
@@ -53,22 +69,27 @@
 :is_hoge_change_to_be_saved
 :is_hoge_in_database
 # ========== end
-:id_came_from_user?
-:id_changed?
-:id_change
-:id_will_change!
-:id_previously_changed?
-:id_previous_change
-:restore_id!
-:saved_change_to_id?
-:saved_change_to_id
-:id_before_last_save
-:will_save_change_to_id?
-:id_change_to_be_saved
-:created_at=
-:created_at_before_type_cast
-:created_at_came_from_user?
-:created_at?
+# foo(string)のColumn追加により18のmethodsが追加
+# ========== start
+:foo
+:foo=
+:foo_before_type_cast
+:foo_came_from_user?
+:foo?
+:foo_changed?
+:foo_change
+:foo_will_change!
+:foo_was
+:foo_previously_changed?
+:foo_previous_change
+:restore_foo!
+:saved_change_to_foo?
+:saved_change_to_foo
+:foo_before_last_save
+:will_save_change_to_foo?
+:foo_change_to_be_saved
+:foo_in_database
+# ========== end
 :pluralize_table_names
 :table_name_suffix
 :_validate_callbacks
